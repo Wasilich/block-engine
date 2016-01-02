@@ -1,0 +1,87 @@
+/**  Класс edge позволяет удержать пустой блок от коллапса  **/
+.edge:before {content: "\00A0";height: auto;}
+/**  /edge  **/
+.text-center {text-align: center;}
+.center {margin: 0.125em auto;text-align: center;}
+.center img {margin:1em auto;}
+.pull-right {float: right !important; padding-right: 0.5em;}
+.pull-left {float: left !important; padding-left: 0.5em;}
+.spacer {display: block; width: 100%; height: 4em; clear: both; background: transparent;}
+.em-air {line-height: 3em;}
+.color {color: #8eda32;}
+.color-red {color: #f00;}
+/*.color-orange {color: #59a51b;}*/
+.color-bottom-bordered {border-bottom:solid 1px #8eda32;}
+.border, .bordered {border:solid 1px #e0e0e0;}
+.lightbox {float: left;margin: 0.375em 0.75em 0.25em 0;border: solid 2px #a8a8a8;}
+.clearfix {display: block;}
+/**  addition  **/
+.row {display: table-row;}
+.content {padding: 1.75em 2em 2em;}
+.fixed {position: fixed;}
+* {box-sizing: border-box;}
+* html .clearfix { height: 1%;}
+.clearfix { display: block;}
+.clearfix:after {
+    visibility: hidden;
+    display: block;
+    font-size: 0;
+    content: " ";
+    clear: both;
+    height: 0;
+}
+ul, ol{padding: 0;}
+*:before, *:after {box-sizing: border-box;}
+/**  Основное  **/
+body, html{background: #fff; font-family: 'Open Sans', sans-serif;color: #555;}
+html {font-size:16px;}
+input, button, select, textarea {font-family: inherit;font-size: inherit;line-height: inherit;}
+h1{
+	font-size: 1.75em;
+	line-height: 1.5em;
+	text-transform: uppercase;
+	font-weight: 300;
+}
+h2{
+	font-size:1.500em;
+	text-transform: uppercase;
+	font-weight: 400;
+	line-height: 100%;
+	margin: 0 auto 0.75em;
+}
+h3{
+    font-size:1.250em;
+	text-transform: uppercase;
+	font-weight: 400;
+	line-height: 100%;
+	margin: 0 auto 0.75em;
+}
+h4{
+	font-size:1.125em;
+	text-transform: uppercase;
+	font-weight: 400;
+	line-height: 100%;
+	margin: 0 auto 0.75em;
+}
+h5{
+	font-size:1.063em;
+	font-weight: 400;
+	line-height: 20px;
+	margin: 0 auto 0.75em;
+}
+p {font-family: 'Open Sans', sans-serif;font-size: 16px;line-height: 1.5em;padding: 0.375em 0;}
+em {font-size: 1.250em;}
+.em {line-height: 1.5em;}
+a {color: #59a51b; text-decoration: none;}
+a:hover, a:focus {text-decoration: none; color: #59a51b;}
+hr {
+    margin-top: 0;
+    margin-bottom: 0;
+    border: 0;
+    border-top: 1px solid #eee;
+	border-color: #59a51b;
+	border-width: 3px;
+	width: 30%;
+	float: left;
+	clear: both;
+}
