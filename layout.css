@@ -1,0 +1,483 @@
+/**********  Layout дополнительные  **********/
+/* Fixed menu */
+nav {
+	position: fixed;
+	top: 0;
+	margin: 0;
+	width: 100%;
+	z-index: 100;
+	line-height: 1.25em;
+}
+.menu {
+	text-transform: uppercase;
+	vertical-align: middle;
+	background-color: rgba(0, 0, 0, 0.4);
+    width: 100%;
+    padding: 2em;
+}
+.menu a {
+    font-weight: 600;
+	color: #8eda32;
+	font-size: 12px;
+	letter-spacing: 1px;
+}
+.menu ul {
+    width: 100%;
+	padding: 0;
+    margin: 0;
+}
+.items li {
+    list-style: none;
+    display: inline;
+    padding-left: 1.75em;
+    width: 100%;
+    margin: 0;
+}
+.icon {
+    color: #8eda32;
+    cursor: pointer;
+    display: none;
+    font-size: 14px;
+}
+.on {
+    background-color: #222;
+    padding: 1em !important;
+	transition: all 0.5s;
+}
+.on .group-80-off-010 {width: 90%; margin-left: 5%; transition: all 0.5s;}
+.showitems {
+    display: block !important;
+	width: 100%;
+	margin: 0;
+}
+/* End of Fixed menu */
+/* Media Queries */
+@media screen and (max-width: 992px) {
+[class*=group-80][class*=-offset-010] {width: 90%;margin-left: 5%; margin-right: 5%;}
+[class*=block-50] {width: 100%;margin: 0;}
+}
+@media screen and (max-width: 800px) {
+[class*=group-60][class*=-offset-20] {width: 90%;margin-left: 5%; margin-right: 5%;}
+.menu {
+    background-color: #222 !important;
+	text-align: center !important;
+	padding: 0 !important;
+	/*height:3.125em;*/
+	transition: all 0.5s;
+}
+.icon {
+    display: block;
+	height: 23px;
+	width: 24px;
+	padding: 4px;
+	border: solid 1px #59a51b;
+	margin: 1em auto;
+}
+.logo {display: none;}
+.items {
+    display: none;   
+}
+.items li {padding-left: 0;}
+.items a li {
+    display: table;
+    line-height: 4em;
+	text-align: center;
+	padding: 0 auto;
+}
+.showitems {width: 100% !important;}
+.items li:hover {
+	display: block;
+	background: #000;
+}
+}
+/**  Header  **/
+#header {
+	background: url(images/04.jpg);
+	background-size: cover;
+	background-position: center;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	color: #cfcfcf;
+}
+#header .overlay{
+	background: linear-gradient(to bottom,  rgba(0,0,0,0.8) 0%,rgba(0,0,0,0.73) 17%,rgba(0,0,0,0.66) 35%,rgba(0,0,0,0.55) 62%,rgba(0,0,0,0.4) 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cc000000', endColorstr='#66000000',GradientType=0 ); /* IE6-9 */
+	height: 750px;
+	background-attachment: fixed;
+}
+#header .content {padding: 20% 0 0;}
+@media screen and (max-width: 800px) {
+#header .overlay {
+    height: 600px;
+}
+}
+.lead {line-height: 200%;}
+a.fa.fa-angle-down {
+	padding: 10px 15px;
+	color: #8eda32;
+	border: 2px solid #8eda32;
+	border-radius: 50%;
+	font-size: 24px;
+	margin-top: 100px;
+	transition: all 0.5s;
+}
+a.fa.fa-angle-down:hover{
+	background: #8eda32;
+	color: #555;
+	border: 2px solid #8eda32;
+}
+/* Footer */
+#footer{
+	position:relative;
+	background: #222;
+	color: #cfcfcf;
+	padding: 20px 0 15px 0;
+}
+#footer { vertical-align: middle;}
+ul.footer-social li{
+	display: inline-block;
+	margin-right: 10px;
+}
+#footer p{
+	font-size: 12px;
+	/*margin-top: 10px;*/
+	line-height: 3em;
+}
+#footer i.fa {
+	height: 33px;
+	width: 33px;
+	border: 2px solid #8c8c8c;
+	font-size: 20px;
+	padding: 5px 6px;
+	border-radius: 50%;
+	color: #8c8c8c;
+	transition: all 0.2s;
+}
+#footer i.fa:hover{
+	background: #59a51b;
+	border-color: #59a51b;
+	color: #fff;
+}
+@media screen and (max-width: 800px) {
+#footer .pull-right, #footer .pull-left {
+    float: none !important;
+	text-align: center !important;
+}
+#footer p {line-height: 3em;}
+#footer .pull-right, #footer .pull-left  {padding-left: 0;padding-right: 0;}
+}
+/**  Оформление форм  **/
+label {
+	float: left;
+	padding-left: 0.5em;
+	font-size: 12px;
+	font-weight: 300;
+	line-height:1.375em;
+	font-family: 'Open Sans', sans-serif;
+}
+.form-control, .form-control99 {
+	display: block;
+	width: 98%;
+	margin: 1%;
+	padding: 6px 12px;
+	font-size: 14px;
+	line-height: 1.42857143;
+	margin-bottom:0.5em;
+	color: #888;
+	background-color: #fff;
+	background-image: none;
+	border: 1px solid #ccc;
+	border-radius: 2px;
+	box-shadow: none;
+	transition: none;
+}
+.form-control:focus, .form-control99:focus {
+	border-color: inherit;
+	outline: 0;
+	box-shadow: transparent;
+}
+.security {margin-left:0.5em;}
+.btn {
+    display: inline-block;
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 1.42857143;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    cursor: pointer;
+    user-select: none;
+    background-image: none;
+    border: 1px solid transparent;
+	margin: 0.5em;
+}
+.btn:hover, .btn:active, .btn:focus {
+    color: #fff;
+    text-decoration: none;
+	background-image: none;
+    outline: 0;
+}
+button.btn.tf-btn.btn-default, input.btn.tf-btn.btn-default {
+	float: right;
+	background: #4698ea;
+	border: 0;
+	border-radius: 0;
+	padding: 10px 40px;
+	text-transform: uppercase;
+	color:#fff;
+}
+.loginform .form-content .btn-default {
+	clear: right;
+	background: #4698ea;
+	color: #fff;
+	border: 0;
+	border-radius: 0;
+	padding: 8px 50px;
+	margin:8px auto;
+	font-size: 14px;
+	text-transform: uppercase;
+	font-weight: normal;
+    line-height: 1.42857143;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+}
+.btn:active, .btn.active {
+	background-image: none;
+	outline: 0;
+	box-shadow: none;
+}
+.btn:focus, 
+.btn:active:focus, 
+.btn.active:focus, 
+.btn.focus, 
+.btn:active.focus, 
+.btn.active.focus {
+	outline: none;
+	outline-offset: none;
+}
+/* Loginform */
+.loginform {
+	list-style:none;
+	color:#fff;
+}
+.loginform input {
+    margin:0.5em auto;
+	padding:0.5em;
+	font-weight:normal;
+	font-size:14px;
+	background:#fff;
+	border:0;
+	color:#333;
+}
+.form-header {text-transform: uppercase;}
+#login-content {
+	z-index:1000;
+    width:250px;    
+	background:rgba(0, 0, 0, 0.75);
+	padding:20px 10px;
+	text-align:center;
+}
+#login-content .row {
+    line-height:1.75em;
+}
+/* Детали формы */
+#lean_overlay {position:fixed;z-index:100;top:0px;left:0px;height:100%;width:100%;background:#000;display:none;}
+#signup {display:none;}
+.modal_close {display: block;width: 14px;height: 14px;background: url(images/modal_close.png);z-index:100;}
+.loginform {
+    display:table;
+	width:80%;
+	margin:0 10%;
+}
+#loginform {display:table;width:80%;margin:0 10%;}
+#account {text-align:center;}
+.account .button {
+	background: #59a51b;
+	border: 0;
+	border-radius: 0;
+	padding: 10px 40px;
+	color: #5a5a5a;
+	text-transform: uppercase;
+}
+.account img {margin:16px auto;}
+.account .row .center {text-align:center;}
+.account .row .center img {margin:16px auto;}
+.account .cell {display:table-cell;vertical-align:baseline;float:left;width:100%;height:auto;text-align:left;}
+.account .label-name {display:table-cell;vertical-align:baseline;float:left;width:50%;height:auto;text-align:right;line-height:1.75em;}
+.account .label-info {display:table-cell;vertical-align:baseline;float:left;width:50%;height:auto;text-align:left;line-height:1.75em;}
+.account .row a {line-height:1.5em;}
+.account .row input {float:none;text-align:center;}
+.account .row .form-control:focus, .account .row input:focus, .account .row select:focus {
+    border-color: inherit;
+	outline: 0;
+	-webkit-box-shadow: transparent;
+	box-shadow: transparent;
+	box-shadow: none;
+	transition: none;
+}
+.register form {width: 100% !important;}
+.register>form>.row {width: 100% !important;}
+.register .account .row {display: table-row;width: 100%;height: 1.5em;vertical-align: baseline;}
+.privat-message {width: 100%;background: #f2f9ff;}
+.privat-message .row {width: 100%;}
+.label-message {float: left;width: 24%;height: auto;text-align: center;}
+.label-message:first-child {text-align: left;}
+.label-message:last-child {text-align: right;}
+td {text-align: left !important;}
+.right {text-align: right;}
+.content .register .account img {margin: 16px auto;}
+.account .row a:link {line-height: 250%;}
+.account .row .login-input {margin: 8px auto;}
+.short-news {display: block;overflow: hidden;margin-bottom: 2em;}
+/* Имя пользователя */
+.user-name {font-family: inherit;font-weight: normal;color: inherit;}
+.label-name {line-height: 140%;padding-left: 0.375em;}
+/* Комментарии */
+.commentform {display: block;width: 100%;margin-top: 1.5em;padding: 0 15px;line-height: 2.5em;}
+.colour {background-color: #efefef;font-size: 0.875em;}
+.comment-block {border: solid 1px #e0e0e0;}
+.commentform .comment-block .row {width: 100%;}
+.fix-column {text-align: center;}
+.fix-column img {margin: 0.5em auto;}
+.comment-wrapper {float:right;width: 100%;margin-left: -150px;padding:0.125em 1em;}
+.comment-cell-text, .comment-cell-top {margin-left: 150px;}
+.comment-cell-top span {margin: 0 1em;}
+.comment-cell-text {line-height: 150%;}
+.fix-column {float: right;width: 150px;}
+/* Отдельные области в тексте */
+pre, listing, xmp, .code {display:block;margin: 0.625em 0;padding: 0.5em 1em;border: solid 1px #e0e0e0;overflow: auto;font-family: monospace;font-size: 90%;}
+/* Стиль оформления цитат */
+.quote-text, .quote {font-style: italic;color: #59a51b;margin: 0.25em 0.5em 0;padding: 0.125em 0.5em 0.375em;line-height: 130%;}
+.quote-text:before, .quote:before {font-size: 1.5em;content: "\f10d";font-family: 'FontAwesome';font-style: normal;color: #59a51b;font-size: 100%;}
+.question-table {line-height: 140%;}
+.question-cell-name {font-weight: 700;}
+.question-cell-text {margin-top: 0.5em;}
+.border .row {margin: 0.5em 1em;}
+/* Категории новостей */
+ul.inline li {display:inline-block;margin-right: 10px;}
+/* Значки перед заголовками */
+.inline i.fa {
+	height: 34px;
+	width: 34px;
+	border: 2px solid #59a51b;
+	font-size: 20px;
+	padding: 5px;
+	border-radius: 50%;
+	color: #59a51b;
+	transition: all 0.2s;
+}
+.inline i.fa:hover, .inline li.fa:hover {
+	background: #59a51b;
+	border-color: #59a51b;
+	color: #fff;
+}
+.inline a:link {font-size:1.125em;text-transform:uppercase;}
+.comment-row .inline i.fa, .account .inline li.fa, .inline li.fa {
+	height: 28px;
+	width: 28px;
+	border: 1px solid #8c8c8c;
+	font-size: 0.938em;
+	padding: 3px;
+	border-radius: 2px;
+	color: #8c8c8c;
+	transition: all 0.2s;
+	margin:4px 3px;
+}
+.comment-row .inline i.fa:hover, .account .inline li.fa:hover {
+	background: #59a51b;
+	border-color: #59a51b;
+	color: #fff;
+}
+.comment-row ul li {font-size:1.125em;}
+.comment-row ul {text-align:center;}
+.comment-row .inline li{
+	display: inline-block;
+	margin-right:-5px !important;
+}
+/* Таблица с набором смайликов */
+.smilestable {
+    background:#fafafa;
+	border:solid 1px #8c8c8c;
+	border-radius:4px;
+	width:380px !important;
+	text-align:left;
+	vertical-align:baseline;
+	padding:15px;
+    position:absolute;
+	display:none;
+}
+.smilestable  .smiles  img {
+    width:auto !important;
+	height:auto !important;
+	margin:4px;
+    border:none;
+	cursor:pointer;
+}
+.smiles {
+
+}
+/* Оформление спойлера */
+.spoiler {
+	/*display:none;*/
+	background:#fefae7 !important;
+	border:solid 1px #eeead0;
+	padding:0.25em 0.5em;
+	color:#444;
+}
+/* Стиль оформления скрытого текста */
+.hide {
+    display:block;
+	padding:6px;
+	cursor:pointer;
+	color:#555;
+}
+.hidetext {
+	text-align:left;
+	display:none;
+}
+/* Постраничная навигация core.php стр. 3617 */
+.navy-page {display:block;}
+.navy-page p {line-height:2.5em;}
+.pager a:link, .pager a:visited {
+    color:#777;
+	font-size:1.125em !important;
+	padding:2px 10px 4px;
+	border:solid 1px #777;
+	border-radius:3px;
+}
+.no-active {color: #777 !important; text-decoration: none;}
+.active {
+    color: #4698ea !important;
+	text-decoration: none;
+	border-color:#4698ea !important;
+}
+.pager a:hover {
+	background: #4698ea;
+	border-color: #4698ea;
+	color: #fff !important;
+	transition: all 0.2s;
+}
+/* Дизайн надписей типа "Осталось 10000 знаков" и счётчиков */
+#info, .info, .counter {font-size:90%;line-height:120%;padding-bottom:0.5em;color:#59a51b;}
+/**  Media Queries  **/
+@media screen and (max-width: 1036px) {
+.edge {display: none;}
+.blox-80-percent {width: 100%;}
+.blox-70-percent {width: 100%;}
+.blox-45-percent {width: 100%;}
+}
+/* Media Queries */
+@media screen and (max-width: 800px) {
+#header {
+    height:600px;
+}
+.container {width: 100%;margin: 0;}
+.col-md-10 {
+	width: 100%;
+	margin-left: 0;
+}
+#footer .container .pull-left, #footer .container .pull-right {float: none;}
+#footer .container {text-align: center;}
+#footer .container p {line-height: 300%;}
+}
