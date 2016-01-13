@@ -1,4 +1,4 @@
-/** Файл из проекта Block-Engine https://github.com/Wasilich/block-engine - автор Wasilich http://webdesign.ru.net/ **/
+/**  Файл из проекта Block-Engine https://github.com/Wasilich/block-engine - автор Wasilich http://webdesign.ru.net/  **/
 /**  Класс edge позволяет удержать пустой блок от коллапса  **/
 .edge:before {content: "\00A0";height: auto;}
 /**  /edge  **/
