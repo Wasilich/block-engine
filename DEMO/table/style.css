@@ -96,7 +96,7 @@ h4{
 	line-height: 100%;
 	margin: 0 auto 0.75em;
 }
-/* Tables */
+/** Tables **/
 [class*=zebra-] table {display:block;width:100%;word-break:normal;word-break:keep-all;}
 [class*=zebra-] table tbody {border:1px solid #d0d0d0;}
 [class*=zebra-] table th, [class*=zebra-] table td {font-weight:normal;padding:0.75em 1em 1em;line-height:1.375em;}
@@ -106,12 +106,12 @@ h4{
 /* zebra-left */
 .zebra-left table td:nth-child(2n) {text-align:center !important;}
 .zebra-left table td:nth-child(2n+1), .zebra-left table th:nth-child(2n+1) {border-right:1px solid #d0d0d0;}
-/* Table zebra-right */
+/* zebra-right */
 .zebra-right table td:nth-child(2n+1) {text-align:center !important;}
 .zebra-right table td:nth-child(2n), .zebra-right table th:nth-child(2n) {border-left:1px solid #d0d0d0;}
 /* zebra-3col */
 .zebra-3col table td:nth-child(2n+1) {text-align:center !important;}
 .zebra-3col table td:nth-child(2n), .zebra-3col table th:nth-child(2n) {border-right:1px solid #d0d0d0;border-left:1px solid #d0d0d0;}
-/*  */
+/* zebra-strip */
 .zebra-strip table td:nth-child(2n+1) {text-align:center !important;}
 /* /table */
