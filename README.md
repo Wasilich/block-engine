@@ -37,10 +37,10 @@
 ```html
 <div class="group-90-offset-05">
     <div class="block-50">
-	Содержание блока №1
+	    Содержание блока №1
     </div>
     <div class="block-50">
-	Содержание блока №2
+	    Содержание блока №2
     </div>
     <div class="clearfix"></div>
 </div>
