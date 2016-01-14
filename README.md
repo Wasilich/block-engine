@@ -79,7 +79,7 @@ addition.css    | Дополнительные стили
 fontawesome.css | Стили иконочного шрифта
 layout.css      | Дополнительные стили, применительно к определённому сайту
 lightbox.css    | Стили лайтбокса, если таковой используется
-normalizercss   | Нормалайзер CSS от Nicolas Gallagher
+normalizer.css  | Нормалайзер CSS от Nicolas Gallagher
 reset.css       | Reset CSS от Эрика Мейера
 
 Коллекция будет пополняться, поэтому содержание папок может оличаться от описанного здесь.
