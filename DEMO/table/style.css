@@ -104,14 +104,10 @@ h4{
 [class*=zebra-] table tr:nth-child(2n+1) {background-color:#f4f4f4;}
 [class*=zebra-][class*=-th] table th {background-color:#7f7f7f;color:#fff;}
 /* zebra-left */
-.zebra-left table td:nth-child(2n) {text-align:center !important;}
+.zebra-left table td:nth-child(2n), .zebra-right table td:nth-child(2n+1), .zebra-3col table td:nth-child(2n+1), .zebra-strip table td:nth-child(2n+1)  {text-align:center !important;}
 .zebra-left table td:nth-child(2n+1), .zebra-left table th:nth-child(2n+1) {border-right:1px solid #d0d0d0;}
 /* zebra-right */
-.zebra-right table td:nth-child(2n+1) {text-align:center !important;}
 .zebra-right table td:nth-child(2n), .zebra-right table th:nth-child(2n) {border-left:1px solid #d0d0d0;}
 /* zebra-3col */
-.zebra-3col table td:nth-child(2n+1) {text-align:center !important;}
 .zebra-3col table td:nth-child(2n), .zebra-3col table th:nth-child(2n) {border-right:1px solid #d0d0d0;border-left:1px solid #d0d0d0;}
-/* zebra-strip */
-.zebra-strip table td:nth-child(2n+1) {text-align:center !important;}
 /* /table */
