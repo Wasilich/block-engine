@@ -1,5 +1,14 @@
 /** Файл из проекта Block-Engine https://github.com/Wasilich/block-engine - автор Wasilich http://webdesign.ru.net/ **/
-/* Василич это придумал */
+/* Eric Meyer CSS reset */
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {margin:0;padding:0;border:0;outline:0;font-size:100%;vertical-align:baseline;background:transparent;}
+body {line-height: 1}
+ol, ul {list-style: none}
+blockquote, q {quotes: none}
+:focus {outline: 0}
+ins {text-decoration: none}
+del {text-decoration: line-through}
+table {border-collapse: collapse;border-spacing: 0}
+/* End of Eric Meyer CSS reset */
 /**  group & block  **/
 [class*=group], [class*=block] {
     display: block;
@@ -56,3 +65,47 @@
 [class*=group-][class*=-offset-25], [class*=block-][class*=-offset-25] {margin-left: 25%; margin-right: 25%;}
 [class*=group-][class*=-offset-30], [class*=block-][class*=-offset-30] {margin-left: 30%; margin-right: 30%;}
 [class*=group-][class*=-offset-33], [class*=block-][class*=-offset-33] {margin-left: 33.33333333%; margin-right: 33.33333333%;}
+/**  Основное  **/
+body, html{background: #fff; font-family: 'Trebuchet MS', Helvetica CY, DejaVu Sans, sans-serif;color: #555;}
+html {font-size:16px;}
+input, button, select, textarea {font-family: inherit;font-size: inherit;line-height: inherit;}
+* {box-sizing: border-box;}
+* html .clearfix {height: 1%;}
+.clearfix {display: block;}
+.clearfix:after {visibility: hidden;display: block;font-size: 0;content: " ";clear: both;height: 0;}
+ul, ol{padding: 0;}
+*:before, *:after {box-sizing: border-box;}
+#menu {position:fixed;width:100%;top:0;z-index:10;line-height:4em;padding:0 2em;background:#bfbfbf;}
+#header {position:relative;width:100%;height: 300px;margin-top:0;padding-top: 10em;background:#a0a0a0;}
+#main {}
+#footer {width:100%;margin:0;line-height:3em;padding:0.5em 2em;background:#333;color:#d0d0d0;}
+#menu ul {float:left;margin-bottom:0.25em;}
+#menu ul li a:link, #menu ul li a:visited, #footer ul li a:link, #footer ul li a:visited {color:#fff;}
+h1 {
+	font-size:2em;
+	text-transform: uppercase;
+	font-weight: 300;
+	line-height: 1.5em;
+	margin: 0 auto 0.75em;
+	text-align:center;
+}
+h4{
+	font-size:1.125em;
+	text-transform: uppercase;
+	font-weight: 400;
+	line-height: 100%;
+	margin: 0 auto 0.75em;
+}
+p {padding-top: 2em;}
+/* Addition */
+.pull-left {float: left;}
+.pull-right {float: right;}
+/* Buttons */
+[class*=button] {display: inline-block;padding: 0.75em 2.5em 0.875em;text-transform: uppercase;cursor: pointer;}
+[class*=button-][class*=-default] {background: #4698ea;border:solid 1px #5f5f5f;color: #fff;}
+[class*=button-][class*=-rounded] {border-radius: 1.375em;}
+[class*=button-][class*=-soft] {border-radius: 4px;box-shadow: inset 0 1px rgba(255, 255, 255, 0.4), 0 1px 2px rgba(0, 0, 0, 0.2);}
+[class*=button-][class*=-gradient] {background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0) 50%, rgba(0, 0, 0, 0.12) 51%, rgba(0, 0, 0, 0.04));}
+[class*=button-]:hover {background-color: #1a74d3;border: solid 1px #000;}
+[class*=button-]:active {background-image: linear-gradient(to bottom, #1a5da5, #3a8be0);}
+/* /Buttons */

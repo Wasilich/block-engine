@@ -1,4 +1,4 @@
-/** Стили для лайтбокса **/
+/* Стили для лайтбокса */
 #lightboxOverlay {position:absolute;top:0;left:0;z-index: 9999;background-color: black;filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=85);opacity: 0.85;display: none;}
 #lightbox {position:absolute;left:0;width:100%;z-index:10000;text-align: center;line-height:0;}
 #lightbox img {width:auto;height:auto;}

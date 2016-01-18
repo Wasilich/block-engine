@@ -1,0 +1,19 @@
+/* Tables */
+[class*=zebra-] table {display:block;width:100%;word-break:normal;word-break:keep-all;}
+[class*=zebra-] table tbody {border:1px solid #d0d0d0;}
+[class*=zebra-] table th, [class*=zebra-] table td {font-weight:normal;padding:0.75em 1em 1em;line-height:1.375em;}
+[class*=zebra-] table tr {border-top:1px solid #c8c8c8;}
+[class*=zebra-] table tr:nth-child(2n+1) {background-color:#f4f4f4;}
+[class*=zebra-][class*=-th] table th {background-color:#7f7f7f;color:#fff;}
+/* zebra-left */
+[class*=zebra-left] table td:nth-child(2n) {text-align:center !important;}
+[class*=zebra-left]  td:nth-child(2n+1), [class*=zebra-left] th:nth-child(2n+1) {border-right:1px solid #d0d0d0;}
+/* Table zebra-right */
+[class*=zebra-right] table td:nth-child(2n+1) {text-align:center !important;}
+[class*=zebra-right] table td:nth-child(2n), [class*=zebra-right] table th:nth-child(2n) {border-left:1px solid #d0d0d0;}
+/* zebra-3col */
+[class*=zebra-3col] table td:nth-child(2n+1) {text-align:center !important;}
+[class*=zebra-3col] table td:nth-child(2n), [class*=zebra-3col] table th:nth-child(2n) {border-right:1px solid #d0d0d0;border-left:1px solid #d0d0d0;}
+/*  */
+[class*=zebra-][class*=-strip] table td:nth-child(2n+1) {text-align:center !important;}
+/* /tables */

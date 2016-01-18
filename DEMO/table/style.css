@@ -1,4 +1,4 @@
-/**  Файл из проекта Block-Engine https://github.com/Wasilich/block-engine - автор Wasilich http://webdesign.ru.net/  **/
+/** Файл из проекта Block-Engine https://github.com/Wasilich/block-engine - автор Wasilich http://webdesign.ru.net/ **/
 /* Eric Meyer CSS reset */
 html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {margin:0;padding:0;border:0;outline:0;font-size:100%;vertical-align:baseline;background:transparent;}
 body {line-height: 1}
@@ -76,7 +76,7 @@ input, button, select, textarea {font-family: inherit;font-size: inherit;line-he
 ul, ol{padding: 0;}
 *:before, *:after {box-sizing: border-box;}
 #menu {position:fixed;width:100%;top:0;z-index:10;line-height:4em;padding:0 2em;background:#bfbfbf;}
-#header {position:relative;width:100%;margin-top:0;background:#a0a0a0;}
+#header {position:relative;width:100%;height: 300px;margin-top:0;padding-top: 10em;background:#a0a0a0;}
 #main {}
 #footer {width:100%;margin:0;line-height:3em;padding:0.5em 2em;background:#333;color:#d0d0d0;}
 #menu ul {float:left;margin-bottom:0.25em;}
@@ -85,7 +85,7 @@ h1 {
 	font-size:2em;
 	text-transform: uppercase;
 	font-weight: 300;
-	line-height: 8em;
+	line-height: 1.5em;
 	margin: 0 auto 0.75em;
 	text-align:center;
 }
@@ -96,17 +96,22 @@ h4{
 	line-height: 100%;
 	margin: 0 auto 0.75em;
 }
-/** Tables **/
+/* Tables */
 [class*=zebra-] table {display:block;width:100%;word-break:normal;word-break:keep-all;}
 [class*=zebra-] table tbody {border:1px solid #d0d0d0;}
 [class*=zebra-] table th, [class*=zebra-] table td {font-weight:normal;padding:0.75em 1em 1em;line-height:1.375em;}
 [class*=zebra-] table tr {border-top:1px solid #c8c8c8;}
 [class*=zebra-] table tr:nth-child(2n+1) {background-color:#f4f4f4;}
 [class*=zebra-][class*=-th] table th {background-color:#7f7f7f;color:#fff;}
-/** Центрирование текста в некоторых ячейках **/
-[class*=-left] table td:nth-child(2n), [class*=-right] table td:nth-child(2n+1), [class*="-3col"] table td:nth-child(2n+1), [class*="-strip"] table td:nth-child(2n+1)  {text-align:center !important;}
-/** Границы ячеек с большим контентом **/
-[class*=block-][class*=-left] table td:nth-child(2n+1) {border-right:1px solid #d0d0d0;}
-[class*=block-][class*=-right] table td:nth-child(2n) {border-left:1px solid #d0d0d0;}
-[class*=block-][class*="-3col"] table td:nth-child(2n) {border-right:1px solid #d0d0d0;border-left:1px solid #d0d0d0;}
+/* zebra-left */
+[class*=zebra-left] table td:nth-child(2n) {text-align:center !important;}
+[class*=zebra-left]  td:nth-child(2n+1), [class*=zebra-left] th:nth-child(2n+1) {border-right:1px solid #d0d0d0;}
+/* Table zebra-right */
+[class*=zebra-right] table td:nth-child(2n+1) {text-align:center !important;}
+[class*=zebra-right] table td:nth-child(2n), [class*=zebra-right] table th:nth-child(2n) {border-left:1px solid #d0d0d0;}
+/* zebra-3col */
+[class*=zebra-3col] table td:nth-child(2n+1) {text-align:center !important;}
+[class*=zebra-3col] table td:nth-child(2n), [class*=zebra-3col] table th:nth-child(2n) {border-right:1px solid #d0d0d0;border-left:1px solid #d0d0d0;}
+/*  */
+[class*=zebra-][class*=-strip] table td:nth-child(2n+1) {text-align:center !important;}
 /* /tables */
