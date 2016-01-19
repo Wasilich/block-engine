@@ -1,9 +1,12 @@
 /* Buttons */
-[class*=button] {display: inline-block;padding: 0.75em 2.5em 0.875em;text-transform: uppercase;cursor: pointer;}
+[class*=button] {display: inline-block;margin: 0 !important;padding: 0.75em 2.5em 0.875em;text-transform: uppercase;cursor: pointer;}
 [class*=button-][class*=-default] {background: #4698ea;border:solid 1px #5f5f5f;color: #fff;}
 [class*=button-][class*=-rounded] {border-radius: 1.375em;}
 [class*=button-][class*=-soft] {border-radius: 4px;box-shadow: inset 0 1px rgba(255, 255, 255, 0.4), 0 1px 2px rgba(0, 0, 0, 0.2);}
 [class*=button-][class*=-gradient] {background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0) 50%, rgba(0, 0, 0, 0.12) 51%, rgba(0, 0, 0, 0.04));}
 [class*=button-]:hover {background-color: #1a74d3;border: solid 1px #000;}
 [class*=button-]:active {background-image: linear-gradient(to bottom, #1a5da5, #3a8be0);}
+[class*=button-][class*=-group]  {border-left: solid 1px #9f9f9f;}
+[class*=-group]:first-child {border-top-left-radius: 6px !important;border-bottom-left-radius: 6px !important;}
+[class*=-group]:last-child {border-top-right-radius: 6px !important;border-bottom-right-radius: 6px !important;}
 /* /Buttons */
