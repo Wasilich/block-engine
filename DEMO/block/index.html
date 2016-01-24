@@ -82,7 +82,6 @@
 			<h4>Оформление форм</h4>
 			<div class="group-80-offset-010 bg-color02">
 			    <h4>Блок "group-80-offset-010"</h4>
-			    
 				<div class="block-60-offset-20-bordered-round-top bg-color01">
 				    <p>"block-80-offset-010-bordered-round-top - "Шапка объекта"</p>
 				</div>
@@ -104,16 +103,68 @@
 					<div class="group-100">
 					    <label for="mess">Текст сообщения</label>
                         <textarea name="ruxesoobchenie" class="block-100-bordered input" id="mess"></textarea>
-						<p>&nbsp;</p>
-						<input class="button-default pull-right" type="submit" name="submit" value="Отправить">
-						<p>&nbsp;</p>
-				        <div class="clearfix"></div>
 					</div>
+					<div class="group-100">
+					    <div class="block-50 center-text">
+						    <img class="security" src="images/captcha.jpg">
+						</div>
+						<div class="block-50 edge">
+						</div>
+					</div>
+					<div class="group-100">
+						<div class="group-50 padding-right">
+							<div class="block-100 center-text">
+								<label for="InputCaptcha">Введите защитный код:</label>
+								<input name="captcha" type="text" class="block-100-bordered input" id="InputCaptcha">
+							</div>
+						</div>
+						<div class="group-50 padding-left">
+						    <br>
+							<input class="button-default pull-right" type="submit" name="submit" value="Отправить">
+						</div>
+					</div>
+					<div class="clearfix"></div>
 				</div>
 				<div class="block-60-offset-20-bordered-round-bottom bg-color01">
 				    <p>"block-80-offset-010-bordered-round-bottom - "Футер" объекта"</p>
 				</div>
                 <p>&nbsp;</p>
+				<div class="clearfix"></div>
+			</div>
+			<p>&nbsp;</p>
+			<div class="group-80-offset-010-bordered bg-color01">
+			    <h4>Форма комментариев с ячейками фиксированной ширины</h4>
+				<div class="group-60-offset-20">
+				    <div class="group-100-bordered bg-color03">
+					    <div class="comment-wrapper">
+					        <div class="comment-content">
+						        <div class="pull-left">
+							        Комментарий
+							    </div>
+							    <div class="pull-right">
+							        Цитировать
+							    </div>
+						    </div>
+					    </div>
+					    <div class="comment-content-fixed-width center-text">
+					        Имя автора
+					    </div>
+					</div>
+					<div class="group-100-bordered">
+					    <div class="comment-wrapper">
+					        <div class="comment-content">
+						        Ячейка "Имя автора" и ячейка с аватаром имеют постоянную ширину 150 пикселей. Форма комментариев - "резиновая"!<br><br>
+								Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae 
+							    ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur 
+							    aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.
+						    </div>
+					    </div>
+					    <div class="block-fixed-width center-text-avatar">
+					        <img src="images/avatar.png">
+					    </div>
+					</div>
+				</div>
+				<p>&nbsp;</p>
 				<div class="clearfix"></div>
 			</div>
 			<p>&nbsp;</p>

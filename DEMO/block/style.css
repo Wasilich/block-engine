@@ -9,7 +9,7 @@ ins {text-decoration: none}
 del {text-decoration: line-through}
 table {border-collapse: collapse;border-spacing: 0}
 /* End of Eric Meyer CSS reset */
-/**  group & block  **/
+/* group & block */
 [class*=group], [class*=block] {
     display: block;
 	box-sizing: border-box;
@@ -18,7 +18,7 @@ table {border-collapse: collapse;border-spacing: 0}
 	padding: 0;
 	overflow: visible;
 }
-/**  group block ширина. Используя эти правила, можно создавать новые классы самостоятельно  **/
+/* group&block ширина. Используя эти правила, можно создавать новые классы самостоятельно */
 [class*=group-100], [class*=block-100] {width: 100%;}
 [class*=group-98], [class*=block-98] {width: 98%;}
 [class*=group-90], [class*=block-90] {width: 90%;}
@@ -38,7 +38,6 @@ table {border-collapse: collapse;border-spacing: 0}
 [class*=group-010], [class*=block-010] {width: 10%;}
 [class*=group-09], [class*=block-09] {width: 9.09090909%;}
 [class*=group-08], [class*=block-08] {width: 8.33333333%;}
-
 [class*=group][class*=form], [class*=block][class*=form] {padding: 1em 2.5em 1.5em;}
 /**  Отступы "margin"  **/
 [class*=group-][class*=-off-00], [class*=block-][class*=-off-00] {margin-left: 0;}
@@ -73,7 +72,7 @@ table {border-collapse: collapse;border-spacing: 0}
 /* Класс bordered (будьте внимательны с цифровыми значениями, меняйте их одновременно (в примере - 1px)) */
 [class*=-bordered] {border: solid 1px #808080;padding: -1px;}
 [class*=-bordered]+[class*=-bordered] {margin-top: -1px;}
-[class*=-bordered] p {padding: 0.938em 1.938em}
+[class*=-bordered] p {padding: 15px 31px}
 /* Классы закруглённых блоков */
 [class*=-rounded] {border-radius: 6px;}
 [class*=-round-top] {border-top-left-radius: 6px;border-top-right-radius: 6px;}
@@ -130,8 +129,20 @@ label {padding: 8px;font-size: 90%;line-height: 150%;}
 .input, textarea {padding: 4px 12px;border-radius: 2px;}
 textarea {height: 100px;overflow: auto;}
 /* /Form */
+[class*=center-text] {padding: 0;text-align: center !important;}
+[class*=center-text] img {margin: 6px auto 0;}
 .pull-right {float: right;}
 .pull-left {float: left;}
+/**  Класс edge позволяет удержать пустой блок от коллапса  **/
+.edge:before {content: "\00A0";height: auto;}
+/* /edge */
+/* Форма комментариев с ячейками фиксированной ширины */
+.comment-wrapper {float: right;width: 100%;margin-left: -150px;}
+.comment-content {margin-left: 150px;}
+.block-fixed-width {float: left;width: 150px;}
+[class*=center-text][class*=avatar] img {text-align: center;margin: 24px auto;}
+[class*=comment-content] {padding: 8px 12px;line-height: 1.25em;}
+[class*=comment-content][class*=center-text] {padding-left: 0 !important;}
 /* Buttons */
 [class*=button] {display: inline-block;margin: 0 !important;padding: 0.75em 2.5em 0.875em;text-transform: uppercase;cursor: pointer;}
 [class*=button-][class*=-default] {background: #808080;border:solid 1px #5f5f5f;color: #fff;}
@@ -142,10 +153,17 @@ textarea {height: 100px;overflow: auto;}
 [class*=group-80][class*=-offset-010], [class*=block-80][class*=-offset-010] {width: 98%; margin-left: 1%;margin-right: 1%;}
 }
 @media screen and (max-width: 801px) {
-[class*=block-60][class*=-offset-20] {width: 80%; margin-left: 10%;margin-right: 10%;}
+[class*=group-60][class*=-offset-20], [class*=block-60][class*=-offset-20] {width: 80%; margin-left: 10%;margin-right: 10%;}
 }
 @media screen and (max-width: 641px) {
 [class*=group-80][class*=-offset-010], [class*=block-80][class*=-offset-010] {width: 100%; margin-left: 0;margin-right: 0;}
-[class*=block-60][class*=-offset-20] {width: 98%; margin-left: 1%;margin-right: 1%;}
-[class*=group-50][class*=padding-left], [class*=group-50][class*=padding-right] {width: 100%;padding-left: 0;padding-right: 0;}
+[class*=group-60][class*=-offset-20], [class*=block-60][class*=-offset-20] {width: 94%; margin-left: 3%;margin-right: 3%;}
+[class*=group-50][class*=padding-left], [class*=block-50][class*=padding-left], [class*=group-50][class*=padding-right], [class*=block-50][class*=padding-right] {width: 100%;padding-left: 0;padding-right: 0;}
+[class*=block-50][class*=center-text] {width: 100%;}
+.edge {display: none;}
+.comment-wrapper {margin-left: -120px;}
+.comment-content {margin-left: 120px;}
+.block-fixed-width {width: 120px;}
+[class*=center-text][class*=avatar] img {margin: 11px auto;}
+[class*=group-], [class*=block-] {font-size:96%;}
 }
