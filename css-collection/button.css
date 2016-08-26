@@ -1,13 +1,46 @@
 /* Файл из проекта Block-Engine https://github.com/Wasilich/block-engine - автор Wasilich http://webdesign.ru.net/ */
 /* Buttons */
-[class*=button] {display: inline-block;margin: 0 !important;padding: 0.75em 2.5em 0.875em;text-transform: uppercase;cursor: pointer;border:solid 1px #5f5f5f;}
-[class*=button-][class*=-default] {background: #4698ea;color: #fff;text-shadow: 0 -1px rgba(0, 0, 0, 0.55);box-shadow: inset 0 1px rgba(255, 255, 255, 0.4), inset 0 0 0 1px rgba(255, 255, 255, 0.1), 0 1px 1px rgba(0, 0, 0, 0.25);}
-[class*=button-][class*=-rounded] {border-radius: 1.375em;}
-[class*=button-][class*=-soft] {border-radius: 4px;box-shadow: inset 0 1px rgba(255, 255, 255, 0.4), 0 1px 2px rgba(0, 0, 0, 0.2);}
-[class*=button-][class*=-gradient] {background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0) 50%, rgba(0, 0, 0, 0.12) 51%, rgba(0, 0, 0, 0.04));}
-[class*=button-]:hover {background-color: #1a74d3;border: solid 1px #000;}
-[class*=button-]:active {background-image: linear-gradient(to bottom, #1a5da5, #3a8be0);}
-[class*=button-][class*=-block]  {border-left: solid 1px #707070;}
-[class*=-block]:first-child {border-top-left-radius: 6px !important;border-bottom-left-radius: 6px !important;}
-[class*=-block]:last-child {border-top-right-radius: 6px !important;border-bottom-right-radius: 6px !important;}
+.button {
+    padding: 10px 20px;
+	border: solid 1px #46a;
+	color: #46a;
+}
+[class*=button][class*=-bg] {
+	background: #57b;
+	color: #fff;
+}
+[class*=-bg]:hover {background: #46a;}
+[class*=-bg]:active {background: #47b;}
+[class*=button] {
+    display: inline-block;
+	text-transform: uppercase;
+	cursor: pointer;
+	margin: 2px 0;
+}
+[class*=button] a:link, [class*=button] a:visited, [class*=button] a:hover, [class*=button] a:active {color: #fff !important; text-decoration: none;}
+[class*=button-][class*=-tiny] {
+    font-size: 12px;
+	padding: 3px 30px 2px;
+}
+[class*=button-][class*=-tiny][class*=-rounded] {
+    border-radius: 9px;
+}
+[class*=button-][class*=-default][class*=-rounded] {
+    border-radius: 20px;
+}
+[class*=button-][class*=-soft] {
+    border-radius: 5px;
+}
+[class*=button-][class*=-block]  {
+    border-left: solid 1px #abc;
+	border-right: solid 1px #46a;
+}
+[class*=button-][class*=-block]:nth-of-type(1) {
+	border-top-left-radius: 20px;
+	border-bottom-left-radius: 20px;
+}
+[class*=button-][class*=-block]:last-child {
+	border-top-right-radius: 20px;
+	border-bottom-right-radius: 20px;
+}
 /* /Buttons */
