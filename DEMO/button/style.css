@@ -1,118 +1,128 @@
 /* Файл из проекта Block-Engine https://github.com/Wasilich/block-engine - автор Wasilich http://webdesign.ru.net/ */
 /* Axiomatic CSS reset */
-* {margin: 0;padding: 0;border: 0;outline: 0;font-size: 100%;vertical-align: baseline;background: transparent;line-height: 1.5em;}
-ol, ul {list-style: none;padding: 0;}
+* {margin: 0; padding: 0; border: 0; outline: 0; vertical-align: baseline;}
+ol, ul {list-style: none; padding: 0;}
 blockquote, q {quotes: none}
-table {border-collapse: collapse;border-spacing: 0}
+table {border-collapse: collapse; border-spacing: 0}
 * {box-sizing: border-box;}
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {display: block}
 /* End of CSS reset */
+/* Основное */
+body {background: #fff; font-family: 'Roboto', sans-serif; color: #444;}
+h1, h2, h3, h4, h5, h6 {font-family: 'Roboto', sans-serif; font-weight: 400; font-style: italic; color: #777;}
+#header {background: #e0e6ef; padding-top: 8px; padding-bottom: 8px;}
+#article {margin-top: 10vh;}
 /* group & block */
 [class*=group], [class*=block] {
     display: block;
 	box-sizing: border-box;
-	float: left;
-	margin: 0;
-	padding: 0;
-	overflow: visible;
+	overflow: auto;
 }
-.group {clear: both;}
+[class*=block] {float: left;}
+[class*=group] {clear: both;}
 /* group&block ширина. Используя эти правила, можно создавать новые классы самостоятельно */
 [class*=group-100], [class*=block-100] {width: 100%;}
-[class*=group-98], [class*=block-98] {width: 98%;}
-[class*=group-90], [class*=block-90] {width: 90%;}
-[class*=group-80], [class*=block-80] {width: 80%;}
-[class*=group-70], [class*=block-70] {width: 70%;}
-[class*=group-60], [class*=block-60] {width: 60%;}
-[class*=group-50], [class*=block-50] {width: 50%;}
-[class*=group-40], [class*=block-40] {width: 40%;}
-[class*=group-33], [class*=block-33] {width: 33.33333333%;}
-[class*=group-30], [class*=block-30] {width: 30%;}
-[class*=group-25], [class*=block-25] {width: 25%;}
-[class*=group-20], [class*=block-20] {width: 20%;}
-[class*=group-16], [class*=block-16] {width: 16.66666667%;}
-[class*=group-14], [class*=block-14] {width: 14.28571429%;}
-[class*=group-12], [class*=block-12] {width: 12.5%;}
-[class*=group-11], [class*=block-11] {width: 11.11111111%;}
+[class*=group-098], [class*=block-098] {width: 98%;}
+[class*=group-090], [class*=block-090] {width: 90%;}
+[class*=group-080], [class*=block-080] {width: 80%;}
+[class*=group-070], [class*=block-070] {width: 70%;}
+[class*=group-060], [class*=block-060] {width: 60%;}
+[class*=group-050], [class*=block-050] {width: 50%;}
+[class*=group-040], [class*=block-040] {width: 40%;}
+[class*=group-033], [class*=block-033] {width: 33.33333333%;}
+[class*=group-030], [class*=block-030] {width: 30%;}
+[class*=group-025], [class*=block-025] {width: 25%;}
+[class*=group-020], [class*=block-020] {width: 20%;}
+[class*=group-016], [class*=block-016] {width: 16.66666667%;}
+[class*=group-014], [class*=block-014] {width: 14.28571429%;}
+[class*=group-012], [class*=block-012] {width: 12.5%;}
+[class*=group-011], [class*=block-011] {width: 11.11111111%;}
 [class*=group-010], [class*=block-010] {width: 10%;}
-[class*=group-09], [class*=block-09] {width: 9.09090909%;}
-[class*=group-08], [class*=block-08] {width: 8.33333333%;}
+[class*=group-009], [class*=block-009] {width: 9.09090909%;}
+[class*=group-008], [class*=block-008] {width: 8.33333333%;}
 [class*=group][class*=form], [class*=block][class*=form] {padding: 1em 2.5em 1.5em;}
 /* Отступы "margin" */
-[class*=group-][class*=-off-001], [class*=block-][class*=-off-001] {margin-left: 1%;}
-[class*=group-][class*=-off-005], [class*=block-][class*=-off-005] {margin-left: 5%;}
-[class*=group-][class*=-off-008], [class*=block-][class*=-off-008] {margin-left: 8.33333333%;}
-[class*=group-][class*=-off-009], [class*=block-][class*=-off-009] {margin-left: 9.09090909%;}
-[class*=group-][class*=-off-010], [class*=block-][class*=-off-010] {margin-left: 10%;}
-[class*=group-][class*=-off-11], [class*=block-][class*=-off-11] {margin-left: 11.11111111%;}
-[class*=group-][class*=-off-12], [class*=block-][class*=-off-12] {margin-left: 12.5%;}
-[class*=group-][class*=-off-14], [class*=block-][class*=-off-14] {margin-left: 14.28571429%;}
-[class*=group-][class*=-off-15], [class*=block-][class*=-off-15] {margin-left: 15%;}
-[class*=group-][class*=-off-16], [class*=block-][class*=-off-16] {margin-left: 16.66666667%;}
-[class*=group-][class*=-off-20], [class*=block-][class*=-off-20] {margin-left: 20%;}
-[class*=group-][class*=-off-25], [class*=block-][class*=-off-25] {margin-left: 25%;}
-[class*=group-][class*=-off-30], [class*=block-][class*=-off-30] {margin-left: 30%;}
-[class*=group-][class*=-off-33], [class*=block-][class*=-off-33] {margin-left: 33.33333333%;}
-[class*=group-][class*=-off-35], [class*=block-][class*=-off-35] {margin-left: 35%;}
-[class*=group-][class*=-off-40], [class*=block-][class*=-off-40] {margin-left: 40%;}
-[class*=group-][class*=-off-45], [class*=block-][class*=-off-45] {margin-left: 45%;}
-[class*=group-][class*=-off-50], [class*=block-][class*=-off-50] {margin-left: 50%;}
+[class*=off-001] {margin-left: 1%;}
+[class*=off-005] {margin-left: 5%;}
+[class*=off-008] {margin-left: 8.33333333%;}
+[class*=off-009] {margin-left: 9.09090909%;}
+[class*=off-010] {margin-left: 10%;}
+[class*=off-011] {margin-left: 11.11111111%;}
+[class*=off-012] {margin-left: 12.5%;}
+[class*=off-014] {margin-left: 14.28571429%;}
+[class*=off-015] {margin-left: 15%;}
+[class*=off-016] {margin-left: 16.66666667%;}
+[class*=off-020] {margin-left: 20%;}
+[class*=off-025] {margin-left: 25%;}
+[class*=off-030] {margin-left: 30%;}
+[class*=off-033] {margin-left: 33.33333333%;}
+[class*=off-035] {margin-left: 35%;}
+[class*=off-040] {margin-left: 40%;}
+[class*=off-045] {margin-left: 45%;}
+[class*=off-050] {margin-left: 50%;}
 /* Отступы "margin" с двух сторон */
-[class*=group-][class*=-offset-001], [class*=block-][class*=-offset-001] {margin-left: 1%; margin-right: 1%;}
-[class*=group-][class*=-offset-005], [class*=block-][class*=-offset-005] {margin-left: 5%; margin-right: 5%;}
-[class*=group-][class*=-offset-010], [class*=block-][class*=-offset-010] {margin-left: 10%; margin-right: 10%;}
-[class*=group-][class*=-offset-12], [class*=block-][class*=-offset-12] {margin-left: 12.5%; margin-right: 12.5%;}
-[class*=group-][class*=-offset-15], [class*=block-][class*=-offset-15] {margin-left: 15%; margin-right: 15%;}
-[class*=group-][class*=-offset-20], [class*=block-][class*=-offset-20] {margin-left: 20%; margin-right: 20%;}
-[class*=group-][class*=-offset-25], [class*=block-][class*=-offset-25] {margin-left: 25%; margin-right: 25%;}
-[class*=group-][class*=-offset-30], [class*=block-][class*=-offset-30] {margin-left: 30%; margin-right: 30%;}
-[class*=group-][class*=-offset-33], [class*=block-][class*=-offset-33] {margin-left: 33.33333333%; margin-right: 33.33333333%;}
+[class*=offset-001] {margin-left: 1%; margin-right: 1%;}
+[class*=offset-005] {margin-left: 5%; margin-right: 5%;}
+[class*=offset-010] {margin-left: 10%; margin-right: 10%;}
+[class*=offset-012] {margin-left: 12.5%; margin-right: 12.5%;}
+[class*=offset-015] {margin-left: 15%; margin-right: 15%;}
+[class*=offset-020] {margin-left: 20%; margin-right: 20%;}
+[class*=offset-025] {margin-left: 25%; margin-right: 25%;}
+[class*=offset-030] {margin-left: 30%; margin-right: 30%;}
+[class*=offset-033] {margin-left: 33.33333333%; margin-right: 33.33333333%;}
 /* Класс bordered (будьте внимательны с цифровыми значениями, меняйте их одновременно (в примере - 1px)) */
-[class*=-bordered] {border: solid 1px #808080;}
-[class*=-bordered] + [class*=-bordered] {margin-top: -1px;}
-[class*=-bordered] p {padding: 15px 31px}
-/* Классы закруглённых блоков */
-[class*=-rounded] {border-radius: 6px;}
-[class*=-round-top] {border-top-left-radius: 6px;border-top-right-radius: 6px;}
-[class*=-round-bottom] {border-bottom-left-radius: 6px;border-bottom-right-radius: 6px;}
-/* Основное */
-p {padding: 16px 32px;}
-body, html{background: #fff; font-family: 'Trebuchet MS', Helvetica CY, DejaVu Sans, sans-serif;color: #555;}
-html {font-size:16px;}
-input, button, select, textarea {font-family: inherit;font-size: inherit;line-height: inherit;}
-#menu {position:fixed;width:100%;top:0;z-index:10;line-height:4em;padding:0 2em;background:#bfbfbf;}
-#header {position:relative;width:100%;height: 300px;margin-top:0;padding-top: 10em;background:#a0a0a0;}
-#main {background: #fff;}
-#footer {width:100%;margin:0;line-height:3em;padding:0.5em 2em;background:#333;color:#d0d0d0;}
-#menu ul {float:left;margin-bottom:0.25em;}
-#menu ul li a:link, #menu ul li a:visited, #footer ul li a:link, #footer ul li a:visited {color:#fff;}
-h1 {
-	font-size:2em;
-	text-transform: uppercase;
-	font-weight: 300;
-	margin: 0 auto 0.75em;
-	text-align:center;
-}
-h4{
-	font-size:1.125em;
-	text-transform: uppercase;
-	font-weight: 400;
-	margin: 1em auto 0.75em;
-	text-align:center;
-}
-/* Addition */
-.pull-left {float: left;}
-.pull-right {float: right;}
-[class*=center-text] {text-align: center !important;}
-[class*=center-text] ~ [class*=group] {margin: 0 auto;}
+[class*=bordered] {border: solid 1px #808080;}
+[class*=bordered] + [class*=-bordered] {margin-top: -1px;}
+[class*=bordered] p {padding: 15px 31px}
+/* Float blocks */
+[class*=push-left] {float: left;}
+[class*=push-right] {float: right;}
+/* Centered */
+[class*=center] {text-align: center;}
+/* Класс edge позволяет удержать пустой блок от коллапса */
+[class*=edge]:before {content: "\00A0";height: auto;}
 /* Buttons */
-[class*=button] {display: inline-block;margin: 0 !important;padding: 0.75em 2.5em 0.875em;text-transform: uppercase;cursor: pointer;border:solid 1px #5f5f5f;}
-[class*=button-][class*=-default] {background: #4698ea;color: #fff;text-shadow: 0 -1px rgba(0, 0, 0, 0.55);box-shadow: inset 0 1px rgba(255, 255, 255, 0.4), inset 0 0 0 1px rgba(255, 255, 255, 0.1), 0 1px 1px rgba(0, 0, 0, 0.25);}
-[class*=button-][class*=-rounded] {border-radius: 1.375em;}
-[class*=button-][class*=-soft] {border-radius: 4px;box-shadow: inset 0 1px rgba(255, 255, 255, 0.4), 0 1px 2px rgba(0, 0, 0, 0.2);}
-[class*=button-][class*=-gradient] {background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0) 50%, rgba(0, 0, 0, 0.12) 51%, rgba(0, 0, 0, 0.04));}
-[class*=button-]:hover {background-color: #1a74d3;border: solid 1px #000;}
-[class*=button-]:active {background-image: linear-gradient(to bottom, #1a5da5, #3a8be0);}
-[class*=button-][class*=-block]  {border-left: solid 1px #707070;}
-[class*=-block]:first-child {border-top-left-radius: 6px !important;border-bottom-left-radius: 6px !important;}
-[class*=-block]:last-child {border-top-right-radius: 6px !important;border-bottom-right-radius: 6px !important;}
+.button {
+    padding: 10px 20px;
+	border: solid 1px #46a;
+	color: #46a;
+}
+[class*=button][class*=bg] {
+	background: #57b;
+	color: #fff;
+}
+[class*=bg]:hover {background: #46a;}
+[class*=bg]:active {background: #47b;}
+[class*=button] {
+    display: inline-block;
+	text-transform: uppercase;
+	cursor: pointer;
+	margin: 2px 0;
+}
+[class*=button] a:link, [class*=button] a:visited, [class*=button] a:hover, [class*=button] a:active {color: #fff !important; text-decoration: none;}
+[class*=button-][class*=-tiny] {
+    font-size: 12px;
+	padding: 3px 30px 2px;
+}
+[class*=button-][class*=-tiny][class*=-rounded] {
+    border-radius: 9px;
+}
+[class*=button-][class*=-default][class*=-rounded] {
+    border-radius: 20px;
+}
+[class*=button-][class*=-soft] {
+    border-radius: 5px;
+}
+[class*=button-][class*=-block]  {
+    border-left: solid 1px #abc;
+	border-right: solid 1px #46a;
+}
+[class*=button-][class*=-block]:nth-of-type(1) {
+	border-top-left-radius: 20px;
+	border-bottom-left-radius: 20px;
+}
+[class*=button-][class*=-block]:last-child {
+	border-top-right-radius: 20px;
+	border-bottom-right-radius: 20px;
+}
 /* /Buttons */
