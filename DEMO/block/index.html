@@ -1,168 +1,71 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="ru">
     <head>
-        <title>Примеры блоков</title>
+	    <title>Примеры блоков</title>
+		<meta charset="utf-8">
         <meta name="author" content="Wasilich">
-        <meta name="description" content="description">
-        <meta name="keywords" content="keywords">
-        <meta charset="utf-8">
 	    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="icon" type="image/x-icon" href="favicon.ico">
-        <link rel="stylesheet" type="text/css" href="style.css">
-	    <!--[if lt IE 9]>
-        <script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
-        <![endif]-->
-	    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-        <!--[if lt IE 9]>
-        <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-        <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-        <![endif]-->
+	    <meta name="viewport" content="width=device-width, initial-scale=1">
+    	<link href="https://fonts.googleapis.com/css?family=Roboto:300,400i,400&subset=cyrillic" rel="stylesheet">
+	    <link rel="stylesheet" href="style.css">
     </head>
     <body>
-        <nav id="menu" role="navigation">
-		    <ul>
-			    <li><a href="https://github.com/Wasilich/block-engine">На GitHub</a></li>
-			</ul>
-	    </nav>
-	    <section id="header" role="banner">
-		    <h1>Примеры блоков классов "block" и "group"</h1>
-	    </section>
-	    <article id="main" role="main">
-		    <h4>Блок "group-100"</h4>
-			<h4>Способы "объявления" блоков</h4>
-			<div class="group-80-offset-010 bg-color02">
-				<h4>Блок "group-80-offset-010"</h4>
-				<div class="block-50 bg-color03">
-				    <p>"block-50"</p>
+	    <section id="header" role="banner" class="group-100">
+		    <div class="group-090-offset-005">
+			    <div class="button-tiny-bg-push-right">
+				    <a href="https://github.com/Wasilich/block-engine">&laquo;&nbsp;Project on GitHub</a>
 				</div>
-				<div class="block-50-off-010 bg-color04">
-					<p>"block-50-off-010"</p>
-				</div>
-				<div class="block-50-offset-25 bg-color05">
-					<p>block-50-offset-25</p>
-				</div>
-				<div class="block-25-off-25 bg-color06">
-					<p>block-25-off-25</p>
-				</div>
-				<div class="block-50-bordered bg-color03">
-					<p>block-50-bordered</p>
-				</div>
-                <p>&nbsp;</p>
 			</div>
-			<p>&nbsp;</p>
-			<h4>Оформление блоков</h4>
-			<div class="group-80-offset-010 bg-color02">
-				<h4>Блок "group-80-offset-010"</h4>
-				<div class="group-80-offset-010-bordered-round-top bg-color03">
-				    <p>"group-80-offset-010-bordered-round-top - "Шапка объекта"</p>
+		</section>
+		<span class="center"><h1>Примеры блоков классов "block" и "group"</h1></span>
+		<section id="article" role="main" class="group-100">
+			<span class="center"><h2>Описания блоков</h2></span>
+			<div class="group-090-offset-005 bgcolor02">
+				<br>&nbsp;<br>
+				<div class="block-050 bgcolor03">
+				    <p>"block-050"</p>
 				</div>
-				<div class="group-80-offset-010-bordered bg-color04">
-				    <p>"group-80-offset-010-bordered"<br>
+				<div class="block-050 bgcolor06">
+				    <p>"block-050"</p>
+				</div>
+				<div class="block-050-off-010 bgcolor04">
+					<p>"block-050-off-010"</p>
+				</div>
+				<div class="block-050-offset-025 bgcolor05">
+					<p>block-050-offset-025</p>
+				</div>
+				<div class="block-025-off-025 bgcolor06">
+					<p>block-025-off-025</p>
+				</div>
+				<div class="block-050-bordered bgcolor03">
+					<p>block-050-bordered</p>
+				</div>
+				<div class="block-100-edge">
+				</div>
+				<br>&nbsp;<br>
+			</div>
+			<br>&nbsp;<br>
+			<span class="center"><h2>Оформление блоков</h2></span>
+			<div class="group-090-offset-005 bgcolor02">
+				<br>&nbsp;<br>
+				<div class="group-080-offset-010-bordered-round-top bgcolor03">
+				    <p>"group-080-offset-010-bordered-round-top - "Шапка объекта"</p>
+				</div>
+				<div class="group-080-offset-010-bordered bgcolor04">
+				    <p>"group-080-offset-010-bordered"<br>
 					Для создания какого-то объекта, <br>например - почтовой формы или формы регистрации.</p>
 				</div>
-				<div class="group-80-offset-010-bordered-round-bottom bg-color05">
-				    <p>"group-80-offset-010-bordered-round-bottom - "Футер" объекта"</p>
+				<div class="group-080-offset-010-bordered-round-bottom bgcolor05">
+				    <p>"group-080-offset-010-bordered-round-bottom - "Футер" объекта"</p>
 				</div>
 				<p>&nbsp;</p>
-				<div class="group-80-offset-010-bordered-rounded bg-color03">
-				    <p>"group-80-offset-010-bordered-rounded - "Закруглённый блок"</p>
+				<div class="group-080-offset-010-bordered-rounded bgcolor03">
+				    <p>"group-080-offset-010-bordered-rounded - "Закруглённый блок"</p>
 				</div>
-                <p>&nbsp;</p>
+				<br>&nbsp;<br>
 			</div>
-			<p>&nbsp;</p>
-			<h4>Оформление форм</h4>
-			<div class="group-80-offset-010 bg-color02">
-			    <h4>Блок "group-80-offset-010"</h4>
-				<div class="block-60-offset-20-bordered-round-top bg-color01">
-				    <p>"block-60-offset-20-bordered-round-top - "Шапка объекта"</p>
-				</div>
-				<div class="block-60-offset-20-bordered-form bg-color01">
-				    <div class="group-100">
-					    <div class="block-50 padding-right">
-					        <label for="InputName">Ваше имя</label>
-                            <input name="ruxeimya" type="text" class="block-100-bordered input" id="InputName">
-					    </div>
-					    <div class="block-50 padding-left">
-					        <label for="InputEmail">Ваш Е-mail</label>
-                            <input name="ruxemylo" type="text" class="block-100-bordered input" id="InputEmail">
-					    </div>
-					</div>
-					<div class="group-100">
-					    <label for="InputTheme">Тема письма:</label>
-					    <input name="theme" type="text" class="block-100-bordered input" id="InputTheme">
-					</div>
-					<div class="group-100">
-					    <label for="mess">Текст сообщения</label>
-                        <textarea name="ruxesoobchenie" class="block-100-bordered input" id="mess"></textarea>
-					</div>
-					<div class="group-100">
-					    <div class="block-50 center-text">
-						    <img class="security" src="images/captcha.jpg">
-						</div>
-						<div class="block-50 edge">
-						</div>
-					</div>
-					<div class="group-100">
-						<div class="block-50 padding-right">
-							<div class="block-100 center-text">
-								<label for="InputCaptcha">Введите защитный код:</label>
-								<input name="captcha" type="text" class="block-100-bordered input" id="InputCaptcha">
-							</div>
-						</div>
-						<div class="block-50 padding-left">
-						    <br>
-							<input class="button-default pull-right" type="submit" name="submit" value="Отправить">
-						</div>
-					</div>
-				</div>
-				<div class="block-60-offset-20-bordered-round-bottom bg-color01">
-				    <p>"block-80-offset-010-bordered-round-bottom - "Футер" объекта"</p>
-				</div>
-                <p>&nbsp;</p>
-			</div>
-			<p>&nbsp;</p>
-			<div class="group-80-offset-010-bordered bg-color01">
-			    <h4>Форма комментариев с ячейками фиксированной ширины</h4>
-				<div class="group-60-offset-20">
-				    <div class="block-100-bordered bg-color03">
-					    <div class="comment-wrapper">
-					        <div class="comment-content">
-						        <div class="pull-left">
-							        Комментарий
-							    </div>
-							    <div class="pull-right">
-							        Цитировать
-							    </div>
-						    </div>
-					    </div>
-					    <div class="comment-content-fixed-width center-text">
-					        Имя автора
-					    </div>
-					</div>
-					<div class="block-100-bordered">
-					    <div class="comment-wrapper">
-					        <div class="comment-content">
-						        Ячейка "Имя автора" и ячейка с аватаром имеют постоянную ширину 150 пикселей. Форма комментариев - "резиновая"!<br><br>
-								Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae 
-							    ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur 
-							    aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.
-						    </div>
-					    </div>
-					    <div class="block-fixed-width center-text-avatar">
-					        <img src="images/avatar.png">
-					    </div>
-					</div>
-				</div>
-				<p>&nbsp;</p>
-			</div>
-			<p>&nbsp;</p>
-	    </article>
-	    <footer id="footer" role="complementary">
-		    <ul>
-			    <li>Разработка и дизайн - <a href="http://webdesign.ru.net">Wasilich</a> Репозиторий проекта на <a href="https://github.com/Wasilich/block-engine">GitHub</a></li>
-			</ul>
-	    </footer>
-    </body>
+			<br>&nbsp;<br>
+		</section>
+	</body>
 </html>
