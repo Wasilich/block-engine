@@ -1,0 +1,12 @@
+body {background: #fff; font-family: 'Roboto', sans-serif; color: #444;}
+h1, h2, h3, h4, h5, h6 {font-family: 'Roboto', sans-serif; font-weight: 400; font-style: italic; color: #777;}
+#header {background: #e0e6ef; padding-top: 8px; padding-bottom: 8px;}
+#article {margin-top: 20vh;}
+p {padding: 16px 32px;}
+
+.bgcolor01 {background: #f8f8f8;}
+.bgcolor02 {background: #e0e0e0;}
+.bgcolor03 {background: #d8d8d8;}
+.bgcolor04 {background: #d0d0d0;}
+.bgcolor05 {background: #c8c8c8;}
+.bgcolor06 {background: #c0c0c0;}
