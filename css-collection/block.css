@@ -66,9 +66,14 @@
 [class*=-round-top] {border-top-left-radius: 6px; border-top-right-radius: 6px;}
 [class*=-round-bottom] {border-bottom-left-radius: 6px; border-bottom-right-radius: 6px;}
 /* Float blocks */
-[class*=push-left] {float: left;}
-[class*=push-right] {float: right;}
+[class*=push-left], [class*=pull-left] {float: left;}
+[class*=push-right], [class*=pull-right] {float: right;}
+[class*=pull-left] {position: absolute; margin-left: 0;}
+[class*=pull-right] {position: absolute; margin-right: 0;}
 /* Centered */
-[class*=center] {text-align: center;}
+[class*=center-text] {text-align: center;}
+[class*=centered] {top: 50%; left: 50%; transform: translate(-50%, -50%);}
+/* Full screen */
+[class*=full-screen] {width: 100vw; height: 100vh;}
 /* Класс edge позволяет удержать пустой блок от коллапса */
 [class*=edge]:before {content: "\00A0";height: auto;}
