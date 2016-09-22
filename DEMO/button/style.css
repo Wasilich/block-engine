@@ -75,10 +75,15 @@ h1, h2, h3, h4, h5, h6 {font-family: 'Roboto', sans-serif; font-weight: 400; fon
 [class*=bordered] + [class*=-bordered] {margin-top: -1px;}
 [class*=bordered] p {padding: 15px 31px}
 /* Float blocks */
-[class*=push-left] {float: left;}
-[class*=push-right] {float: right;}
+[class*=push-left], [class*=pull-left] {float: left;}
+[class*=push-right], [class*=pull-right] {float: right;}
+[class*=pull-left] {position: absolute; margin-left: 0;}
+[class*=pull-right] {position: absolute; margin-right: 0;}
 /* Centered */
-[class*=center] {text-align: center;}
+[class*=center-text] {text-align: center;}
+[class*=centered] {top: 50%; left: 50%; transform: translate(-50%, -50%);}
+/* Full screen */
+[class*=full-screen] {width: 100vw; height: 100vh;}
 /* Класс edge позволяет удержать пустой блок от коллапса */
 [class*=edge]:before {content: "\00A0";height: auto;}
 /* Buttons */
